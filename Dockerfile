@@ -6,16 +6,16 @@ WORKDIR /app
 # Dependências nativas para compilar o adapter pg
 RUN apk add --no-cache python3 make g++
 
-# Cache das dependências
+# Cache das dependências (sem rodar scripts, prisma ainda não tem schema)
 COPY package.json package-lock.json ./
-RUN npm ci
+RUN npm ci --ignore-scripts
 
-# Gerar Prisma Client (precisa do schema)
+# Copiar schema e gerar Prisma Client
 COPY prisma ./prisma
 COPY prisma.config.ts ./
 RUN npx prisma generate
 
-# Copiar resto e buildar
+# Copiar resto do código e buildar
 COPY . .
 ENV NEXT_TELEMETRY_DISABLED=1
 RUN npm run build
