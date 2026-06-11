@@ -1,9 +1,24 @@
 import { PrismaClient } from "@prisma/client";
-import { PrismaPg } from "@prisma/adapter-pg";
 
-const prisma = new PrismaClient({
-  adapter: new PrismaPg(process.env.DATABASE_URL!),
-});
+function createPrismaClient(): PrismaClient {
+  const dbUrl = process.env.DATABASE_URL || "";
+
+  // SQLite — use better-sqlite3 adapter
+  if (dbUrl.startsWith("file:")) {
+    const { PrismaBetterSqlite3 } = require("@prisma/adapter-better-sqlite3");
+    return new PrismaClient({
+      adapter: new PrismaBetterSqlite3({ url: dbUrl }),
+    });
+  }
+
+  // PostgreSQL — use pg adapter
+  const { PrismaPg } = require("@prisma/adapter-pg");
+  return new PrismaClient({
+    adapter: new PrismaPg(dbUrl),
+  });
+}
+
+const prisma = createPrismaClient();
 
 // Copa do Mundo 2026: 48 times, 12 grupos (A-L) de 4 times
 const GROUPS: { name: string; teams: string[] }[] = [
