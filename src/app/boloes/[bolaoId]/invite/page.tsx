@@ -36,7 +36,7 @@ export default async function InvitePage({
       <h1 className="text-2xl font-bold text-zinc-900 mb-2">
         Convidar Amigos
       </h1>
-      <p className="text-zinc-600 mb-6">
+      <p className="text-zinc-700 mb-6">
         Compartilhe o código abaixo com seus amigos para entrarem no bolão{" "}
         <strong>{bolao.name}</strong>
       </p>

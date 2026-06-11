@@ -56,7 +56,7 @@ export default async function HomePage() {
             Monte seu bolão da{" "}
             <span className="text-emerald-600">Copa do Mundo 2026</span>
           </h2>
-          <p className="text-lg text-zinc-600 mb-8 max-w-lg mx-auto">
+          <p className="text-lg text-zinc-700 mb-8 max-w-lg mx-auto">
             Palpite os placares das partidas, desafie seus amigos e descubra
             quem é o melhor prognosticador da Copa!
           </p>
@@ -90,7 +90,7 @@ export default async function HomePage() {
             <div className="bg-white p-6 rounded-xl shadow-sm border border-zinc-200">
               <div className="text-3xl mb-3">👥</div>
               <h3 className="font-semibold text-lg mb-2">Crie seu bolão</h3>
-              <p className="text-sm text-zinc-600">
+              <p className="text-sm text-zinc-700">
                 Crie um bolão em segundos e convide seus amigos pelo código de
                 convite
               </p>
@@ -98,7 +98,7 @@ export default async function HomePage() {
             <div className="bg-white p-6 rounded-xl shadow-sm border border-zinc-200">
               <div className="text-3xl mb-3">⚽</div>
               <h3 className="font-semibold text-lg mb-2">Dê seus palpites</h3>
-              <p className="text-sm text-zinc-600">
+              <p className="text-sm text-zinc-700">
                 Antes de cada partida, palpite o placar exato. Placar exato vale
                 5 pontos!
               </p>
@@ -106,7 +106,7 @@ export default async function HomePage() {
             <div className="bg-white p-6 rounded-xl shadow-sm border border-zinc-200">
               <div className="text-3xl mb-3">🏆</div>
               <h3 className="font-semibold text-lg mb-2">Acompanhe o ranking</h3>
-              <p className="text-sm text-zinc-600">
+              <p className="text-sm text-zinc-700">
                 Veja quem lidera o bolão e acompanhe os palpites dos amigos em
                 tempo real
               </p>
@@ -116,7 +116,7 @@ export default async function HomePage() {
       </main>
 
       {/* Footer */}
-      <footer className="text-center py-6 text-sm text-zinc-400 border-t border-zinc-200 bg-white">
+      <footer className="text-center py-6 text-sm text-zinc-700 border-t border-zinc-200 bg-white">
         Bolão Copa 2026 · Feito para os amigos ⚽
       </footer>
     </div>

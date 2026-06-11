@@ -37,7 +37,7 @@ export function Input({
         required={required}
         disabled={disabled}
         onChange={(e) => onChange?.(e.target.value)}
-        className="px-3 py-2 border border-zinc-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 disabled:bg-zinc-100 disabled:text-zinc-400"
+        className="px-3 py-2 border border-zinc-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 disabled:bg-zinc-100 disabled:text-zinc-700"
       />
     </div>
   );

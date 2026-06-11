@@ -19,7 +19,7 @@ export function InviteCodeDisplay({ code, bolaoId }: InviteCodeDisplayProps) {
 
   return (
     <div className="flex flex-col items-center gap-4 py-4">
-      <p className="text-sm text-zinc-600 text-center">
+      <p className="text-sm text-zinc-700 text-center">
         Código do bolão:
       </p>
       <div className="flex items-center gap-3">
@@ -30,7 +30,7 @@ export function InviteCodeDisplay({ code, bolaoId }: InviteCodeDisplayProps) {
           {copied ? "✓ Copiado!" : "Copiar"}
         </Button>
       </div>
-      <p className="text-xs text-zinc-400 mt-2">
+      <p className="text-xs text-zinc-700 mt-2">
         Seus amigos devem usar este código na página &quot;Entrar em Bolão&quot;
       </p>
     </div>

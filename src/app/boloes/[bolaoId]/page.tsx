@@ -86,7 +86,7 @@ export default async function BolaoDetailPage({
         <div>
           <h1 className="text-2xl font-bold text-zinc-900">{bolao.name}</h1>
           {bolao.description && (
-            <p className="text-zinc-500 mt-1">{bolao.description}</p>
+            <p className="text-zinc-700 mt-1">{bolao.description}</p>
           )}
           <div className="flex items-center gap-3 mt-2">
             <Badge variant="neutral">
@@ -118,13 +118,13 @@ export default async function BolaoDetailPage({
         </Link>
         <Link
           href={`/boloes/${bolao.id}/leaderboard`}
-          className="px-4 py-2 text-sm font-medium text-zinc-600 hover:text-zinc-900 transition-colors"
+          className="px-4 py-2 text-sm font-medium text-zinc-700 hover:text-zinc-900 transition-colors"
         >
           Ranking
         </Link>
         <Link
           href={`/boloes/${bolao.id}/matches`}
-          className="px-4 py-2 text-sm font-medium text-zinc-600 hover:text-zinc-900 transition-colors"
+          className="px-4 py-2 text-sm font-medium text-zinc-700 hover:text-zinc-900 transition-colors"
         >
           Partidas
         </Link>
@@ -145,7 +145,7 @@ export default async function BolaoDetailPage({
 
           {topBets.length === 0 ? (
             <Card className="text-center py-6">
-              <p className="text-sm text-zinc-500">
+              <p className="text-sm text-zinc-700">
                 Nenhum palpite pontuado ainda. O ranking aparece quando as partidas começarem!
               </p>
             </Card>
@@ -167,7 +167,7 @@ export default async function BolaoDetailPage({
                             ? "bg-zinc-200 text-zinc-700"
                             : i === 2
                             ? "bg-amber-100 text-amber-800"
-                            : "bg-zinc-100 text-zinc-600"
+                            : "bg-zinc-100 text-zinc-700"
                         }`}
                       >
                         {i + 1}
@@ -215,7 +215,7 @@ export default async function BolaoDetailPage({
               ⚽ Próximas Partidas
             </h3>
             {upcomingMatches.length === 0 ? (
-              <p className="text-sm text-zinc-500">
+              <p className="text-sm text-zinc-700">
                 Nenhuma partida disponível
               </p>
             ) : (
@@ -231,7 +231,7 @@ export default async function BolaoDetailPage({
                         <span className="font-medium text-zinc-800">
                           {match.homeTeam}
                         </span>
-                        <span className="text-zinc-400 mx-1">vs</span>
+                        <span className="text-zinc-700 mx-1">vs</span>
                         <span className="font-medium text-zinc-800">
                           {match.awayTeam}
                         </span>

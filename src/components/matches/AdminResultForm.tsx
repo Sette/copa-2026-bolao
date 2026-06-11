@@ -78,7 +78,7 @@ export function AdminResultForm({
             className="w-16 h-10 text-center border border-zinc-300 rounded-lg text-lg font-bold focus:outline-none focus:ring-2 focus:ring-emerald-500"
             placeholder="0"
           />
-          <span className="text-zinc-400 font-bold text-lg">×</span>
+          <span className="text-zinc-700 font-bold text-lg">×</span>
           <input
             type="number"
             min="0"

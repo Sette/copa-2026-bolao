@@ -49,7 +49,7 @@ export function MatchCard({ match, bet, bolaoId, showResult }: MatchCardProps) {
     <Card padding="sm" className="hover:border-zinc-300 transition-colors">
       <div className="flex flex-col gap-2">
         {/* Match info header */}
-        <div className="flex items-center justify-between text-xs text-zinc-500">
+        <div className="flex items-center justify-between text-xs text-zinc-700">
           <div className="flex items-center gap-2">
             <Badge variant="neutral">
               {match.groupName || roundLabels[match.round] || `Rodada ${match.round}`}
@@ -76,7 +76,7 @@ export function MatchCard({ match, bet, bolaoId, showResult }: MatchCardProps) {
             )}
           </div>
 
-          <div className="px-3 text-zinc-400 font-medium text-sm">vs</div>
+          <div className="px-3 text-zinc-700 font-medium text-sm">vs</div>
 
           <div className="flex-1">
             <span className="font-semibold text-zinc-800">{match.awayTeam}</span>
@@ -92,7 +92,7 @@ export function MatchCard({ match, bet, bolaoId, showResult }: MatchCardProps) {
         {match.finished && bet ? (
           // Finished match - show bet result
           <div className="flex items-center justify-between mt-1 pt-2 border-t border-zinc-100">
-            <div className="text-xs text-zinc-500">
+            <div className="text-xs text-zinc-700">
               Seu palpite:{" "}
               <span className="font-medium text-zinc-700">
                 {bet.homeScore} × {bet.awayScore}
@@ -107,11 +107,11 @@ export function MatchCard({ match, bet, bolaoId, showResult }: MatchCardProps) {
             )}
           </div>
         ) : match.finished ? (
-          <div className="text-xs text-zinc-400 mt-1 pt-2 border-t border-zinc-100">
+          <div className="text-xs text-zinc-700 mt-1 pt-2 border-t border-zinc-100">
             Você não palpitou nesta partida
           </div>
         ) : !canBet ? (
-          <div className="text-xs text-zinc-400 mt-1 pt-2 border-t border-zinc-100">
+          <div className="text-xs text-zinc-700 mt-1 pt-2 border-t border-zinc-100">
             {bet
               ? `Palpite: ${bet.homeScore} × ${bet.awayScore}`
               : "Partida em andamento - palpites encerrados"}

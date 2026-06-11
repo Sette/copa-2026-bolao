@@ -34,7 +34,7 @@ export function Navbar() {
           <div className="flex items-center gap-4">
             <Link
               href="/dashboard"
-              className="text-sm text-zinc-600 hover:text-zinc-900 transition-colors"
+              className="text-sm text-zinc-700 hover:text-zinc-900 transition-colors"
             >
               Meus Bolões
             </Link>
@@ -59,7 +59,7 @@ export function Navbar() {
                     <p className="text-sm font-medium text-zinc-900 truncate">
                       {session.user.name}
                     </p>
-                    <p className="text-xs text-zinc-500 truncate">
+                    <p className="text-xs text-zinc-700 truncate">
                       {session.user.email}
                     </p>
                   </div>

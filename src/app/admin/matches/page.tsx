@@ -49,7 +49,7 @@ export default async function AdminMatchesPage({
           <h1 className="text-2xl font-bold text-zinc-900">
             Gerenciar Partidas
           </h1>
-          <p className="text-sm text-zinc-500">
+          <p className="text-sm text-zinc-700">
             {finishedCount} de {totalMatches} partidas encerradas
           </p>
         </div>
@@ -62,7 +62,7 @@ export default async function AdminMatchesPage({
           className={`px-3 py-1.5 text-xs font-medium rounded-full transition-colors ${
             !selectedRound
               ? "bg-amber-600 text-white"
-              : "bg-zinc-100 text-zinc-600 hover:bg-zinc-200"
+              : "bg-zinc-100 text-zinc-700 hover:bg-zinc-200"
           }`}
         >
           Todas
@@ -74,7 +74,7 @@ export default async function AdminMatchesPage({
             className={`px-3 py-1.5 text-xs font-medium rounded-full transition-colors ${
               selectedRound === r.value
                 ? "bg-amber-600 text-white"
-                : "bg-zinc-100 text-zinc-600 hover:bg-zinc-200"
+                : "bg-zinc-100 text-zinc-700 hover:bg-zinc-200"
             }`}
           >
             {r.label}
@@ -90,16 +90,16 @@ export default async function AdminMatchesPage({
               key={match.id}
               className="grid grid-cols-12 gap-2 px-4 py-3 items-center text-sm hover:bg-zinc-50"
             >
-              <div className="col-span-1 text-xs text-zinc-400">
+              <div className="col-span-1 text-xs text-zinc-700">
                 #{match.matchNumber}
               </div>
               <div className="col-span-3 font-medium text-zinc-800">
                 {match.homeTeam} × {match.awayTeam}
               </div>
-              <div className="col-span-2 text-xs text-zinc-500">
+              <div className="col-span-2 text-xs text-zinc-700">
                 <Badge variant="neutral">{match.groupName || `Rodada ${match.round}`}</Badge>
               </div>
-              <div className="col-span-1 text-xs text-zinc-500">
+              <div className="col-span-1 text-xs text-zinc-700">
                 {new Date(match.date).toLocaleDateString("pt-BR", {
                   day: "2-digit",
                   month: "2-digit",
@@ -111,10 +111,10 @@ export default async function AdminMatchesPage({
                     {match.homeScore} × {match.awayScore}
                   </span>
                 ) : (
-                  <span className="text-zinc-400">—</span>
+                  <span className="text-zinc-700">—</span>
                 )}
               </div>
-              <div className="col-span-1 text-xs text-zinc-500">
+              <div className="col-span-1 text-xs text-zinc-700">
                 {match._count.bets} palpites
               </div>
               <div className="col-span-2 text-right">

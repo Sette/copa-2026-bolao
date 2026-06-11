@@ -31,7 +31,7 @@ export default async function AdminLayout({
             </span>
             <Link
               href="/admin/matches"
-              className="text-sm text-zinc-600 hover:text-zinc-900 transition-colors"
+              className="text-sm text-zinc-700 hover:text-zinc-900 transition-colors"
             >
               Gerenciar Partidas
             </Link>

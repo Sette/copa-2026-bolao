@@ -75,7 +75,7 @@ export function BetForm({ matchId, bolaoId, currentBet }: BetFormProps) {
           className="w-12 h-8 text-center border border-zinc-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
           placeholder="0"
         />
-        <span className="text-zinc-400 text-sm font-medium">×</span>
+        <span className="text-zinc-700 text-sm font-medium">×</span>
         <input
           type="number"
           min="0"
