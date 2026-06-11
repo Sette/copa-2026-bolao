@@ -75,7 +75,7 @@ export function Navbar() {
           </div>
         ) : (
           <Link
-            href="/"
+            href="/login"
             className="text-sm font-medium text-emerald-700 hover:text-emerald-800 transition-colors"
           >
             Entrar
