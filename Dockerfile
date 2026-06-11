@@ -7,8 +7,10 @@ WORKDIR /app
 RUN apk add --no-cache python3 make g++
 
 # Cache das dependências (sem rodar scripts, prisma ainda não tem schema)
+# .npmrc garante que postinstall nunca rode, mesmo sem --ignore-scripts
+RUN echo 'ignore-scripts=true' > .npmrc
 COPY package.json package-lock.json ./
-RUN npm ci --ignore-scripts
+RUN npm ci
 
 # Copiar schema e gerar Prisma Client
 COPY prisma ./prisma
