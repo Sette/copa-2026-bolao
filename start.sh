@@ -11,7 +11,7 @@ case "$DATABASE_URL" in
 esac
 
 echo "🔄 Aplicando migrações do banco..."
-npx prisma db push --skip-generate
+./node_modules/.bin/prisma db push --skip-generate
 
 echo "🚀 Iniciando servidor..."
 exec node server.js
