@@ -72,7 +72,7 @@ export function BetForm({ matchId, bolaoId, currentBet }: BetFormProps) {
           max="20"
           value={homeScore}
           onChange={(e) => setHomeScore(e.target.value)}
-          className="w-12 h-8 text-center border border-zinc-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
+          className="w-12 h-8 text-center border border-zinc-300 rounded-md text-sm text-black focus:outline-none focus:ring-2 focus:ring-emerald-500"
           placeholder="0"
         />
         <span className="text-black text-sm font-medium">×</span>
@@ -82,7 +82,7 @@ export function BetForm({ matchId, bolaoId, currentBet }: BetFormProps) {
           max="20"
           value={awayScore}
           onChange={(e) => setAwayScore(e.target.value)}
-          className="w-12 h-8 text-center border border-zinc-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
+          className="w-12 h-8 text-center border border-zinc-300 rounded-md text-sm text-black focus:outline-none focus:ring-2 focus:ring-emerald-500"
           placeholder="0"
         />
       </div>

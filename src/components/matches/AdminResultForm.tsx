@@ -75,7 +75,7 @@ export function AdminResultForm({
             max="20"
             value={homeScore}
             onChange={(e) => setHomeScore(e.target.value)}
-            className="w-16 h-10 text-center border border-zinc-300 rounded-lg text-lg font-bold focus:outline-none focus:ring-2 focus:ring-emerald-500"
+            className="w-16 h-10 text-center border border-zinc-300 rounded-lg text-lg font-bold text-black focus:outline-none focus:ring-2 focus:ring-emerald-500"
             placeholder="0"
           />
           <span className="text-black font-bold text-lg">×</span>
@@ -85,7 +85,7 @@ export function AdminResultForm({
             max="20"
             value={awayScore}
             onChange={(e) => setAwayScore(e.target.value)}
-            className="w-16 h-10 text-center border border-zinc-300 rounded-lg text-lg font-bold focus:outline-none focus:ring-2 focus:ring-emerald-500"
+            className="w-16 h-10 text-center border border-zinc-300 rounded-lg text-lg font-bold text-black focus:outline-none focus:ring-2 focus:ring-emerald-500"
             placeholder="0"
           />
         </div>
