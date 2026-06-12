@@ -34,7 +34,7 @@ export default async function HomePage() {
           <div className="flex items-center gap-2">
             <Link
               href="/login"
-              className="px-3 py-2 text-sm font-medium text-black hover:text-zinc-500 transition-colors"
+              className="px-3 py-2 text-sm font-medium text-black hover:text-zinc-600 transition-colors"
             >
               Entrar
             </Link>
@@ -49,14 +49,14 @@ export default async function HomePage() {
       </header>
 
       {/* Hero */}
-      <main className="flex-1 flex flex-col items-center justify-center px-4 py-20">
+      <main className="flex-1 flex flex-col items-center justify-center px-4 py-20 bg-emerald-700">
         <div className="text-center max-w-2xl">
           <div className="text-6xl mb-6">🏆⚽🏆</div>
-          <h2 className="text-4xl font-bold mb-4 text-black">
+          <h2 className="text-4xl font-bold mb-4 text-white">
             Monte seu bolão da{" "}
-            <span className="text-emerald-600">Copa do Mundo 2026</span>
+            <span className="text-emerald-200">Copa do Mundo 2026</span>
           </h2>
-          <p className="text-lg text-black mb-8 max-w-lg mx-auto">
+          <p className="text-lg text-emerald-100 mb-8 max-w-lg mx-auto">
             Palpite os placares das partidas, desafie seus amigos e descubra
             quem é o melhor prognosticador da Copa!
           </p>
@@ -72,13 +72,13 @@ export default async function HomePage() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
               <Link
                 href="/register"
-                className="px-8 py-3 bg-emerald-600 text-white rounded-xl text-lg font-semibold hover:bg-emerald-700 transition-colors"
+                className="px-8 py-3 bg-white text-emerald-700 rounded-xl text-lg font-semibold hover:bg-emerald-50 transition-colors"
               >
                 Criar Conta
               </Link>
               <Link
                 href="/login"
-                className="px-8 py-3 bg-white border-2 border-zinc-300 rounded-xl text-lg font-semibold hover:bg-zinc-50 transition-colors"
+                className="px-8 py-3 bg-emerald-500 text-white rounded-xl text-lg font-semibold hover:bg-emerald-400 transition-colors"
               >
                 Entrar
               </Link>
