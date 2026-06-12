@@ -33,7 +33,13 @@ export default async function AdminLayout({
               href="/admin/matches"
               className="text-sm text-black hover:text-zinc-900 transition-colors"
             >
-              Gerenciar Partidas
+              Partidas
+            </Link>
+            <Link
+              href="/admin/settings"
+              className="text-sm text-black hover:text-zinc-900 transition-colors"
+            >
+              Configurações
             </Link>
           </div>
         </div>

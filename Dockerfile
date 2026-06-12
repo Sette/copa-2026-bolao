@@ -53,6 +53,9 @@ COPY --from=builder /app/prisma.config.ts ./prisma.config.ts
 COPY --from=builder /app/start.sh ./start.sh
 RUN chmod +x ./start.sh
 
+# Diretório para dados persistentes (settings, SQLite)
+RUN mkdir -p data && chown nextjs:nodejs data
+
 # Dependências de runtime (pg_dump, pg_isready etc para PostgreSQL)
 RUN apk add --no-cache postgresql-client
 
