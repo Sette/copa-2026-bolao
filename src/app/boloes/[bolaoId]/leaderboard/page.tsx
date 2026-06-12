@@ -107,7 +107,7 @@ export default async function LeaderboardPage({
       <div className="flex items-center justify-between mb-6">
         <div>
           <h1 className="text-2xl font-bold text-zinc-900">🏆 Ranking</h1>
-          <p className="text-sm text-zinc-700">{bolao.name}</p>
+          <p className="text-sm text-black">{bolao.name}</p>
         </div>
         <Link
           href={`/boloes/${bolaoId}`}
@@ -120,7 +120,7 @@ export default async function LeaderboardPage({
       {ranked.length === 0 ? (
         <Card className="text-center py-12">
           <div className="text-3xl mb-3">📊</div>
-          <p className="text-zinc-700">
+          <p className="text-black">
             Nenhum palpite pontuado ainda. O ranking aparece quando as partidas
             começarem!
           </p>
@@ -129,7 +129,7 @@ export default async function LeaderboardPage({
         <Card padding="none">
           <div className="divide-y divide-zinc-100">
             {/* Header */}
-            <div className="grid grid-cols-12 gap-2 px-4 py-3 text-xs font-medium text-zinc-700 uppercase">
+            <div className="grid grid-cols-12 gap-2 px-4 py-3 text-xs font-medium text-black uppercase">
               <div className="col-span-1">#</div>
               <div className="col-span-4">Jogador</div>
               <div className="col-span-2 text-center">Palpites</div>
@@ -152,10 +152,10 @@ export default async function LeaderboardPage({
                         i === 0
                           ? "bg-yellow-100 text-yellow-800"
                           : i === 1
-                          ? "bg-zinc-200 text-zinc-700"
+                          ? "bg-zinc-200 text-black"
                           : i === 2
                           ? "bg-amber-100 text-amber-800"
-                          : "text-zinc-700"
+                          : "text-black"
                       }`}
                     >
                       {entry.rank}
@@ -170,10 +170,10 @@ export default async function LeaderboardPage({
                       <Badge variant="success">Você</Badge>
                     )}
                   </div>
-                  <div className="col-span-2 text-center text-zinc-700">
+                  <div className="col-span-2 text-center text-black">
                     {entry.totalBets}
                   </div>
-                  <div className="col-span-2 text-center text-zinc-700">
+                  <div className="col-span-2 text-center text-black">
                     {entry.exactScores}
                   </div>
                   <div className="col-span-3 text-right font-semibold text-emerald-700">

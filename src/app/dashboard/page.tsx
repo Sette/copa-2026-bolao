@@ -31,7 +31,7 @@ export default async function DashboardPage() {
       <h1 className="text-2xl font-bold text-zinc-900 mb-2">
         Olá, {session?.user?.name?.split(" ")[0]}!
       </h1>
-      <p className="text-zinc-700 mb-8">
+      <p className="text-black mb-8">
         Bem-vindo ao Bolão da Copa do Mundo 2026
       </p>
 
@@ -54,7 +54,7 @@ export default async function DashboardPage() {
           {memberships.length === 0 ? (
             <Card className="text-center py-8">
               <div className="text-3xl mb-3">🏆</div>
-              <p className="text-zinc-700 mb-4">
+              <p className="text-black mb-4">
                 Você ainda não participa de nenhum bolão
               </p>
               <Button href="/boloes/create" variant="primary" size="sm">
@@ -75,7 +75,7 @@ export default async function DashboardPage() {
                         <h3 className="font-semibold text-zinc-900">
                           {m.bolao.name}
                         </h3>
-                        <p className="text-sm text-zinc-700">
+                        <p className="text-sm text-black">
                           {m.bolao._count.members}{" "}
                           {m.bolao._count.members === 1
                             ? "participante"
@@ -100,7 +100,7 @@ export default async function DashboardPage() {
           </h2>
           {upcomingMatches.length === 0 ? (
             <Card className="text-center py-6">
-              <p className="text-sm text-zinc-700">
+              <p className="text-sm text-black">
                 Nenhuma partida disponível
               </p>
             </Card>
@@ -112,12 +112,12 @@ export default async function DashboardPage() {
                     <span className="font-medium text-zinc-800">
                       {match.homeTeam}
                     </span>
-                    <span className="text-zinc-700">vs</span>
+                    <span className="text-black">vs</span>
                     <span className="font-medium text-zinc-800">
                       {match.awayTeam}
                     </span>
                   </div>
-                  <p className="text-xs text-zinc-700 mt-1">
+                  <p className="text-xs text-black mt-1">
                     {new Date(match.date).toLocaleDateString("pt-BR", {
                       day: "2-digit",
                       month: "short",

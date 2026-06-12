@@ -97,7 +97,7 @@ export default async function MatchesPage({
       <div className="flex items-center justify-between mb-6">
         <div>
           <h1 className="text-2xl font-bold text-zinc-900">Partidas</h1>
-          <p className="text-sm text-zinc-700">
+          <p className="text-sm text-black">
             {bolao.name} · {betCount} palpites dados
           </p>
         </div>
@@ -116,7 +116,7 @@ export default async function MatchesPage({
           className={`px-3 py-1.5 text-xs font-medium rounded-full transition-colors ${
             !selectedRound
               ? "bg-emerald-600 text-white"
-              : "bg-zinc-100 text-zinc-700 hover:bg-zinc-200"
+              : "bg-zinc-100 text-black hover:bg-zinc-200"
           }`}
         >
           Todas
@@ -128,7 +128,7 @@ export default async function MatchesPage({
             className={`px-3 py-1.5 text-xs font-medium rounded-full transition-colors ${
               selectedRound === r.value
                 ? "bg-emerald-600 text-white"
-                : "bg-zinc-100 text-zinc-700 hover:bg-zinc-200"
+                : "bg-zinc-100 text-black hover:bg-zinc-200"
             }`}
           >
             {r.label}
@@ -146,7 +146,7 @@ export default async function MatchesPage({
               className={`px-2.5 py-1 text-xs font-medium rounded-full transition-colors ${
                 sp.group === g.groupName
                   ? "bg-emerald-600 text-white"
-                  : "bg-zinc-100 text-zinc-700 hover:bg-zinc-200"
+                  : "bg-zinc-100 text-black hover:bg-zinc-200"
               }`}
             >
               Grupo {g.groupName}
@@ -159,7 +159,7 @@ export default async function MatchesPage({
       {matches.length === 0 ? (
         <Card className="text-center py-12">
           <div className="text-3xl mb-3">⚽</div>
-          <p className="text-zinc-700">
+          <p className="text-black">
             Nenhuma partida encontrada para este filtro
           </p>
         </Card>

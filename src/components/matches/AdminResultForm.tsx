@@ -68,7 +68,7 @@ export function AdminResultForm({
     <form onSubmit={handleSubmit} className="flex flex-col gap-3">
       <div className="flex items-center gap-3">
         <div className="flex items-center gap-2">
-          <label className="text-sm font-medium text-zinc-700">Placar:</label>
+          <label className="text-sm font-medium text-black">Placar:</label>
           <input
             type="number"
             min="0"
@@ -78,7 +78,7 @@ export function AdminResultForm({
             className="w-16 h-10 text-center border border-zinc-300 rounded-lg text-lg font-bold focus:outline-none focus:ring-2 focus:ring-emerald-500"
             placeholder="0"
           />
-          <span className="text-zinc-700 font-bold text-lg">×</span>
+          <span className="text-black font-bold text-lg">×</span>
           <input
             type="number"
             min="0"

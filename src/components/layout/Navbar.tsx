@@ -34,7 +34,7 @@ export function Navbar() {
           <div className="flex items-center gap-4">
             <Link
               href="/dashboard"
-              className="text-sm text-zinc-700 hover:text-zinc-900 transition-colors"
+              className="text-sm text-black hover:text-zinc-900 transition-colors"
             >
               Meus Bolões
             </Link>
@@ -48,7 +48,7 @@ export function Navbar() {
                   name={session.user.name}
                   size="sm"
                 />
-                <span className="text-sm font-medium text-zinc-700 hidden sm:inline truncate max-w-[120px]">
+                <span className="text-sm font-medium text-black hidden sm:inline truncate max-w-[120px]">
                   {session.user.name}
                 </span>
               </button>
@@ -59,13 +59,13 @@ export function Navbar() {
                     <p className="text-sm font-medium text-zinc-900 truncate">
                       {session.user.name}
                     </p>
-                    <p className="text-xs text-zinc-700 truncate">
+                    <p className="text-xs text-black truncate">
                       {session.user.email}
                     </p>
                   </div>
                   <button
                     onClick={() => signOut({ callbackUrl: "/" })}
-                    className="w-full text-left px-4 py-2 text-sm text-zinc-700 hover:bg-zinc-50 transition-colors"
+                    className="w-full text-left px-4 py-2 text-sm text-black hover:bg-zinc-50 transition-colors"
                   >
                     Sair
                   </button>

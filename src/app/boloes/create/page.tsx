@@ -7,7 +7,7 @@ export default function CreateBolaoPage() {
   return (
     <div className="max-w-lg mx-auto px-4 py-8">
       <h1 className="text-2xl font-bold text-zinc-900 mb-2">Criar Bolão</h1>
-      <p className="text-zinc-700 mb-6">
+      <p className="text-black mb-6">
         Crie um bolão e convide seus amigos para participar
       </p>
       <Card>

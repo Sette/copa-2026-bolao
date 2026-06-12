@@ -34,7 +34,7 @@ export default async function HomePage() {
           <div className="flex items-center gap-2">
             <Link
               href="/login"
-              className="px-3 py-2 text-sm font-medium text-zinc-700 hover:text-zinc-900 transition-colors"
+              className="px-3 py-2 text-sm font-medium text-black hover:text-zinc-500 transition-colors"
             >
               Entrar
             </Link>
@@ -52,11 +52,11 @@ export default async function HomePage() {
       <main className="flex-1 flex flex-col items-center justify-center px-4 py-20">
         <div className="text-center max-w-2xl">
           <div className="text-6xl mb-6">🏆⚽🏆</div>
-          <h2 className="text-4xl font-bold mb-4 text-zinc-800">
+          <h2 className="text-4xl font-bold mb-4 text-black">
             Monte seu bolão da{" "}
             <span className="text-emerald-600">Copa do Mundo 2026</span>
           </h2>
-          <p className="text-lg text-zinc-700 mb-8 max-w-lg mx-auto">
+          <p className="text-lg text-black mb-8 max-w-lg mx-auto">
             Palpite os placares das partidas, desafie seus amigos e descubra
             quem é o melhor prognosticador da Copa!
           </p>
@@ -89,24 +89,24 @@ export default async function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
             <div className="bg-white p-6 rounded-xl shadow-sm border border-zinc-200">
               <div className="text-3xl mb-3">👥</div>
-              <h3 className="font-semibold text-lg mb-2">Crie seu bolão</h3>
-              <p className="text-sm text-zinc-700">
+              <h3 className="font-semibold text-lg mb-2 text-black">Crie seu bolão</h3>
+              <p className="text-sm text-black">
                 Crie um bolão em segundos e convide seus amigos pelo código de
                 convite
               </p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm border border-zinc-200">
               <div className="text-3xl mb-3">⚽</div>
-              <h3 className="font-semibold text-lg mb-2">Dê seus palpites</h3>
-              <p className="text-sm text-zinc-700">
+              <h3 className="font-semibold text-lg mb-2 text-black">Dê seus palpites</h3>
+              <p className="text-sm text-black">
                 Antes de cada partida, palpite o placar exato. Placar exato vale
                 5 pontos!
               </p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm border border-zinc-200">
               <div className="text-3xl mb-3">🏆</div>
-              <h3 className="font-semibold text-lg mb-2">Acompanhe o ranking</h3>
-              <p className="text-sm text-zinc-700">
+              <h3 className="font-semibold text-lg mb-2 text-black">Acompanhe o ranking</h3>
+              <p className="text-sm text-black">
                 Veja quem lidera o bolão e acompanhe os palpites dos amigos em
                 tempo real
               </p>
@@ -116,7 +116,7 @@ export default async function HomePage() {
       </main>
 
       {/* Footer */}
-      <footer className="text-center py-6 text-sm text-zinc-700 border-t border-zinc-200 bg-white">
+      <footer className="text-center py-6 text-sm text-black border-t border-zinc-200 bg-white">
         Bolão Copa 2026 · Feito para os amigos ⚽
       </footer>
     </div>

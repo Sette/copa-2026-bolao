@@ -55,7 +55,7 @@ export default function LoginPage() {
           <h1 className="text-2xl font-bold text-zinc-800 mt-2">
             Entrar
           </h1>
-          <p className="text-sm text-zinc-700 mt-1">
+          <p className="text-sm text-black mt-1">
             Bem-vindo de volta ao Bolão Copa 2026
           </p>
         </div>
@@ -94,7 +94,7 @@ export default function LoginPage() {
               <div className="w-full border-t border-zinc-200" />
             </div>
             <div className="relative flex justify-center text-xs">
-              <span className="bg-white px-2 text-zinc-700">ou</span>
+              <span className="bg-white px-2 text-black">ou</span>
             </div>
           </div>
 
@@ -125,7 +125,7 @@ export default function LoginPage() {
           </Button>
         </Card>
 
-        <p className="text-center text-sm text-zinc-700 mt-6">
+        <p className="text-center text-sm text-black mt-6">
           Não tem conta?{" "}
           <Link
             href="/register"
@@ -137,7 +137,7 @@ export default function LoginPage() {
 
         <Link
           href="/"
-          className="block text-center text-sm text-zinc-700 mt-4 hover:text-zinc-900"
+          className="block text-center text-sm text-black mt-4 hover:text-zinc-900"
         >
           ← Voltar
         </Link>

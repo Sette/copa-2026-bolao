@@ -51,7 +51,7 @@ export default async function AdminMatchDetailPage({
             <h1 className="text-xl font-bold text-zinc-900">
               {match.homeTeam} × {match.awayTeam}
             </h1>
-            <p className="text-sm text-zinc-700 mt-1">
+            <p className="text-sm text-black mt-1">
               {match.groupName || `Rodada ${match.round}`} ·{" "}
               {new Date(match.date).toLocaleDateString("pt-BR", {
                 day: "2-digit",
@@ -82,15 +82,15 @@ export default async function AdminMatchDetailPage({
 
       {match.bets.length === 0 ? (
         <Card className="text-center py-8">
-          <p className="text-zinc-700">Nenhum palpite registrado</p>
+          <p className="text-black">Nenhum palpite registrado</p>
         </Card>
       ) : (
         <div className="flex flex-col gap-4">
           {Array.from(betsByBolao.entries()).map(([bolaoId, bets]) => (
             <Card key={bolaoId} padding="sm">
-              <h3 className="text-sm font-semibold text-zinc-700 mb-3">
+              <h3 className="text-sm font-semibold text-black mb-3">
                 {bets[0]?.bolao?.name ?? "Bolão"}
-                <span className="text-zinc-700 font-normal ml-2">
+                <span className="text-black font-normal ml-2">
                   ({bets.length} palpites)
                 </span>
               </h3>
@@ -106,7 +106,7 @@ export default async function AdminMatchDetailPage({
                         name={bet.user.name}
                         size="sm"
                       />
-                      <span className="text-sm text-zinc-700">
+                      <span className="text-sm text-black">
                         {bet.user.name}
                       </span>
                     </div>

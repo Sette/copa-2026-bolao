@@ -86,7 +86,7 @@ export default async function BolaoDetailPage({
         <div>
           <h1 className="text-2xl font-bold text-zinc-900">{bolao.name}</h1>
           {bolao.description && (
-            <p className="text-zinc-700 mt-1">{bolao.description}</p>
+            <p className="text-black mt-1">{bolao.description}</p>
           )}
           <div className="flex items-center gap-3 mt-2">
             <Badge variant="neutral">
@@ -118,13 +118,13 @@ export default async function BolaoDetailPage({
         </Link>
         <Link
           href={`/boloes/${bolao.id}/leaderboard`}
-          className="px-4 py-2 text-sm font-medium text-zinc-700 hover:text-zinc-900 transition-colors"
+          className="px-4 py-2 text-sm font-medium text-black hover:text-zinc-900 transition-colors"
         >
           Ranking
         </Link>
         <Link
           href={`/boloes/${bolao.id}/matches`}
-          className="px-4 py-2 text-sm font-medium text-zinc-700 hover:text-zinc-900 transition-colors"
+          className="px-4 py-2 text-sm font-medium text-black hover:text-zinc-900 transition-colors"
         >
           Partidas
         </Link>
@@ -145,7 +145,7 @@ export default async function BolaoDetailPage({
 
           {topBets.length === 0 ? (
             <Card className="text-center py-6">
-              <p className="text-sm text-zinc-700">
+              <p className="text-sm text-black">
                 Nenhum palpite pontuado ainda. O ranking aparece quando as partidas começarem!
               </p>
             </Card>
@@ -164,10 +164,10 @@ export default async function BolaoDetailPage({
                           i === 0
                             ? "bg-yellow-100 text-yellow-800"
                             : i === 1
-                            ? "bg-zinc-200 text-zinc-700"
+                            ? "bg-zinc-200 text-black"
                             : i === 2
                             ? "bg-amber-100 text-amber-800"
-                            : "bg-zinc-100 text-zinc-700"
+                            : "bg-zinc-100 text-black"
                         }`}
                       >
                         {i + 1}
@@ -191,14 +191,14 @@ export default async function BolaoDetailPage({
         <div className="md:col-span-2 space-y-6">
           {/* Members */}
           <Card>
-            <h3 className="text-sm font-semibold text-zinc-700 mb-3">
+            <h3 className="text-sm font-semibold text-black mb-3">
               👥 Participantes
             </h3>
             <div className="flex flex-col gap-2">
               {bolao.members.map((m) => (
                 <div key={m.user.id} className="flex items-center gap-2">
                   <Avatar src={m.user.image} name={m.user.name} size="sm" />
-                  <span className="text-sm text-zinc-700 truncate">
+                  <span className="text-sm text-black truncate">
                     {m.user.name}
                   </span>
                   {m.role === "admin" && (
@@ -211,11 +211,11 @@ export default async function BolaoDetailPage({
 
           {/* Upcoming matches */}
           <Card>
-            <h3 className="text-sm font-semibold text-zinc-700 mb-3">
+            <h3 className="text-sm font-semibold text-black mb-3">
               ⚽ Próximas Partidas
             </h3>
             {upcomingMatches.length === 0 ? (
-              <p className="text-sm text-zinc-700">
+              <p className="text-sm text-black">
                 Nenhuma partida disponível
               </p>
             ) : (
@@ -231,7 +231,7 @@ export default async function BolaoDetailPage({
                         <span className="font-medium text-zinc-800">
                           {match.homeTeam}
                         </span>
-                        <span className="text-zinc-700 mx-1">vs</span>
+                        <span className="text-black mx-1">vs</span>
                         <span className="font-medium text-zinc-800">
                           {match.awayTeam}
                         </span>
