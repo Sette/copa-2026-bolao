@@ -31,20 +31,12 @@ export default async function HomePage() {
             </Link>
           </div>
         ) : (
-          <div className="flex items-center gap-2">
-            <Link
-              href="/login"
-              className="px-3 py-2 text-sm font-medium text-black hover:text-zinc-600 transition-colors"
-            >
-              Entrar
-            </Link>
-            <Link
-              href="/register"
-              className="px-4 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors text-sm font-medium"
-            >
-              Criar Conta
-            </Link>
-          </div>
+          <Link
+            href="/login"
+            className="px-4 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors text-sm font-medium"
+          >
+            Entrar
+          </Link>
         )}
       </header>
 
@@ -69,20 +61,12 @@ export default async function HomePage() {
               Ir para Meus Bolões
             </Link>
           ) : (
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-              <Link
-                href="/register"
-                className="px-8 py-3 bg-white text-emerald-700 rounded-xl text-lg font-semibold hover:bg-emerald-50 transition-colors"
-              >
-                Criar Conta
-              </Link>
-              <Link
-                href="/login"
-                className="px-8 py-3 bg-emerald-500 text-white rounded-xl text-lg font-semibold hover:bg-emerald-400 transition-colors"
-              >
-                Entrar
-              </Link>
-            </div>
+            <Link
+              href="/login"
+              className="inline-block px-8 py-3 bg-white text-emerald-700 rounded-xl text-lg font-semibold hover:bg-emerald-50 transition-colors"
+            >
+              Entrar
+            </Link>
           )}
 
           {/* How it works */}
